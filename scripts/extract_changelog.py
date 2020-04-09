@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import re
 from argparse import ArgumentParser
 
 try:
@@ -29,6 +30,9 @@ def main():
 
     args = parser.parse_args()
 
+    # Use the last part of a full git ref
+    version = re.sub(r'^refs/(heads|tags|remotes)/', '', args.version)
+
     fh = open(args.changelog, 'r')
 
     found = False
@@ -42,7 +46,7 @@ def main():
             if found:
                 # this is the next version header
                 break
-            elif args.version in line:
+            elif version in line:
                 # the version we are interested in?
                 found = True
         elif found and not line_ignored(line):
