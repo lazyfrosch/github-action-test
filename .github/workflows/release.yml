@@ -22,6 +22,10 @@ jobs:
       - name: Build binaries
         run: make clean build
 
+      - name: Read changelog for version
+        run: ./scripts/extract_changelog.py ${{ github.ref }} --github-action-output content
+        id: changelog
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -30,8 +34,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
-          # body: |
-          #   TODO
+          body: ${{ steps.changelog.outputs.content }}
           draft: false
           prerelease: false
 
