@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.4](https://github.com/lazyfrosch/github-action-test/tree/0.2.4) (2020-04-09)
+
+[Full Changelog](https://github.com/lazyfrosch/github-action-test/compare/0.2.3...0.2.4)
+
+**Implemented enhancements:**
+
+- Release 0.2.4 [\#3](https://github.com/lazyfrosch/github-action-test/issues/3)
+
+## [0.2.3](https://github.com/lazyfrosch/github-action-test/tree/0.2.3) (2020-04-09)
+
+[Full Changelog](https://github.com/lazyfrosch/github-action-test/compare/0.2.2...0.2.3)
+
 ## [0.2.2](https://github.com/lazyfrosch/github-action-test/tree/0.2.2) (2020-04-09)
 
 [Full Changelog](https://github.com/lazyfrosch/github-action-test/compare/0.2.1...0.2.2)
