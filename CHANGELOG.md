@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.5](https://github.com/lazyfrosch/github-action-test/tree/0.2.5) (2020-04-09)
+
+[Full Changelog](https://github.com/lazyfrosch/github-action-test/compare/0.2.4...0.2.5)
+
+**Closed issues:**
+
+- Release 0.2.5 [\#4](https://github.com/lazyfrosch/github-action-test/issues/4)
+
 ## [0.2.4](https://github.com/lazyfrosch/github-action-test/tree/0.2.4) (2020-04-09)
 
 [Full Changelog](https://github.com/lazyfrosch/github-action-test/compare/0.2.3...0.2.4)
