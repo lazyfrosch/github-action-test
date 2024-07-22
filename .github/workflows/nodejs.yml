@@ -1,0 +1,13 @@
+name: NodeJS
+
+on:
+  push:
+
+jobs:
+  test:
+    name: NodeJS test
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: cat /etc/os-release
+      - run: node --version
