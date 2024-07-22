@@ -10,4 +10,7 @@ jobs:
 
     steps:
       - run: cat /etc/os-release
-      - run: node --version
+      - run: |
+          set -x
+          which node
+          node --version
