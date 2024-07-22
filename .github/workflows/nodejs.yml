@@ -10,7 +10,9 @@ jobs:
 
     steps:
       - run: cat /etc/os-release
-      - run: |
+      - name: Inspect node installation
+        run: |
           set -x
           which node
           node --version
+          find /usr/local
